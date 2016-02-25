@@ -1,8 +1,7 @@
-/*Touch Sensor Demo - Voting Program*/
+/*Voting Program*/
 
-const int pinTouch = 2;
-const int pinLed   = 13;
-
+//Pin to which Touch Sensor is Attached
+const int pinTouch = 6;
 
 void setup()
 {
@@ -34,6 +33,9 @@ void loop()
 
 void YBuzz()
 {
+  
+//3 is the Pin to which Buzzer is Attached
+
   digitalWrite(3, HIGH);
   delay(analogRead(0));
   digitalWrite(3, LOW);
